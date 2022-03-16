@@ -1,19 +1,19 @@
 # Container와 Bean
 
 
-## Spring Container
+## (1) Spring Container
 자바의 생명 주기를 관리하며, 생성된 자바 객체들에게 추가적인 기능을 제공
 
 객체의 생성과 소멸 제어
 
 ---
 
-## Spring Bean
+## (2) Spring Bean
 스프링 IoC 컨테이너에 의해 관리되는 자바의 객체
 
 ---
 
-## IoC(Inversion of Control): 제어의 역전
+## (3) IoC(Inversion of Control): 제어의 역전
 
 > 조영호 님의 '오브젝트: 코드로 이해하는 객체지향 설계' 8장 의존성 관리하기 내용 중 발췌
 
@@ -34,7 +34,7 @@
 
 ---
 
-## 스프링 컨테이너 종류
+## (4) 스프링 컨테이너 종류
 1. BeanFactory
 
 * 빈을 등록, 생성, 조회하고 돌려주는 등 빈을 관리하는 역할
@@ -53,7 +53,9 @@ BeanFactory는 스프링 컨테이너의 최상위 인터페이스이며 스프�
 
 </center>
 
-## BeanDefinition -> 빈 설정 메타정보
+---
+
+## (5) BeanDefinition -> 빈 설정 메타정보
 Spring과 관련된 설정을 하기 위해서는 두 가지 방법이 존재한다. Java 코드와 XML을 이용하는데,
 스프링 컨테이너는 이 메타정보를 기반으로 스프링 빈을 생성한다.
 
@@ -66,8 +68,8 @@ Spring과 관련된 설정을 하기 위해서는 두 가지 방법이 존재한
 ---
 
 
-### (1) Java 설정 구현체
-Java 설정 구현체인 AnnotationConfigApplicationContext를 들어가 보면 AnnotatedBeanDefinitionReader가 있다.
+### Java 설정 구현체
+> Java 설정 구현체인 AnnotationConfigApplicationContext를 들어가 보면 AnnotatedBeanDefinitionReader가 있다.
 
 <center> 
 
@@ -78,8 +80,8 @@ Java 설정 구현체인 AnnotationConfigApplicationContext를 들어가 보면 
 AnnotationConfigApplicationContext는 AnnotatedBeanDefinitionReader를 사용하여 해당 설정 정보인 AppConfig.class를 읽고 BeanDefinition를 생성해 전달한다.
 
 
-### (2) XML 설정 구현체
-XML 설정 구현체인 GenericXmlApplicationContext를 들어가 보면 XmlBeanDefinitionReader가 있다.
+### XML 설정 구현체
+> XML 설정 구현체인 GenericXmlApplicationContext를 들어가 보면 XmlBeanDefinitionReader가 있다.
 
 <center> 
 
@@ -90,8 +92,8 @@ XML 설정 구현체인 GenericXmlApplicationContext를 들어가 보면 XmlBean
 GenericXmlApplicationContext는 XmlBeanDefinitionReader를 사용하여 해당 설정 정보인 appConfig.xml를 읽고 BeanDefinition를 생성해 전달한다.
 
 
-### (3) 커스텀 설정 구현체
-기본적으로 제공하는 Java나 XMl 설정 구현체가 아닌 다른 방법으로 설정을 하고 싶다면 해당 형식을 읽을 수 있는 XXXBeanDefinitionReader를 구현하고 이를 사용하는 XXXApplicationContext를 이용하여 BeanDefinition를 생성하면 된다.
+### 커스텀 설정 구현체
+> 기본적으로 제공하는 Java나 XMl 설정 구현체가 아닌 다른 방법으로 설정을 하고 싶다면 해당 형식을 읽을 수 있는 XXXBeanDefinitionReader를 구현하고 이를 사용하는 XXXApplicationContext를 이용하여 BeanDefinition를 생성하면 된다.
 
 
 <center> 
