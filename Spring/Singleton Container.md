@@ -51,7 +51,7 @@
 
 <center>
 
-![Bytecode](./image/SingletonTest.jpg)
+![Bytecode](./images/SingletonTest.jpg)
 
 </center>
 
@@ -61,7 +61,7 @@
 
 <center>
 
-![Bytecode](./image/Configuration_Bytecode.jpg)
+![Bytecode](./images/Configuration_Bytecode.jpg)
 
 </center>
 

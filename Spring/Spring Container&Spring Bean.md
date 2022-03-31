@@ -49,7 +49,7 @@ BeanFactory는 스프링 컨테이너의 최상위 인터페이스이며 스프�
 
 <center> 
 
-![AppcliationContext](./image/ApplicationContext.jpg)
+![AppcliationContext](./images/ApplicationContext.jpg)
 
 </center>
 
@@ -61,7 +61,7 @@ Spring과 관련된 설정을 하기 위해서는 두 가지 방법이 존재한
 
 <center> 
 
-![BeanDifinition](./image/BeanDifinition.jpg) 
+![BeanDifinition](./images/BeanDifinition.jpg) 
 
 </center>
 
@@ -73,7 +73,7 @@ Spring과 관련된 설정을 하기 위해서는 두 가지 방법이 존재한
 
 <center> 
 
-![AnnotationConfigApplicationContext](./image/AnnotationConfigApplicationContext.jpg) 
+![AnnotationConfigApplicationContext](./images/AnnotationConfigApplicationContext.jpg) 
 
 </center>
 
@@ -85,7 +85,7 @@ AnnotationConfigApplicationContext는 AnnotatedBeanDefinitionReader를 사용하
 
 <center> 
 
-![GenericXmlApplicationContext](./image/GenericXmlApplicationContext.jpg) 
+![GenericXmlApplicationContext](./images/GenericXmlApplicationContext.jpg) 
 
 </center>
 
@@ -98,7 +98,7 @@ GenericXmlApplicationContext는 XmlBeanDefinitionReader를 사용하여 해당 �
 
 <center> 
 
-![BeanDefinitionCreateProcess](./image/BeanDefinitionCreateProcess.jpg) 
+![BeanDefinitionCreateProcess](./images/BeanDefinitionCreateProcess.jpg) 
 
 </center>
 

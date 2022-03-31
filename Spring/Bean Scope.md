@@ -36,7 +36,7 @@ PrototypeBean HelloBean() {
 
 <center>
 
-![Prototype Scope](./image/ProtoTypeScope.jpg)
+![Prototype Scope](./images/ProtoTypeScope.jpg)
 
 </center>
 
@@ -59,7 +59,7 @@ PrototypeBean HelloBean() {
 
 <center>
 
-![Prototype Scope](./image/SingletoAndPrototypeFlow.jpg)
+![Prototype Scope](./images/SingletoAndPrototypeFlow.jpg)
 
 </center>
 
@@ -166,7 +166,7 @@ static class ClientBean {
 
 <center>
 
-![Prototype Scope](./image/RequestScope.jpg)
+![Prototype Scope](./images/RequestScope.jpg)
 
 </center>
 
