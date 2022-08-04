@@ -4,8 +4,6 @@ Service Layer에서 트랜잭션 디폴트로 Propagation.REQUIRED 인 메서드
 
 > 트랜잭션을 다시 찾아보게 된 질문이었다. 명확하게 이유를 설명할 수 없었는데 Spring과 연관되어 있기에 정리하고자 한다.
 
-
-
 1. JdbcTemplate를 사용할 수 없다.
 2. Service Layer에서 DB 커넥션을 관리해야 한다.
 3. DB Connection 정보를 DAO의 메서드에 파라미터로 전달해야 한다.
@@ -71,3 +69,8 @@ Spring은 Connection을 특별한 저장소에 보관해두고, DAO에서는 저
 관점지향 프로그래밍으로 이런 반복적으로 사용되는 부가 기능을 핵심 기능으로부터 분리하는 방법이다. Service Layer는 이제 핵심 기능에만 집중할 수 있게 된다.
 
 Spring에서는 AOP를 프록시 기반으로 만들었는데, 본 주제에서 벗어나기에 설명을 생략한다.
+
+참고링크
+https://github.com/cheese10yun/blog-sample/blob/master/spring-transaction/READEMD.md
+https://ojt90902.tistory.com/866?category=967948
+https://jongmin92.github.io/2018/04/08/Spring/toby-5/
